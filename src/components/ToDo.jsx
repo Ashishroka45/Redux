@@ -14,6 +14,7 @@ function ToDo() {
       {todos.map((todo) => (
         <li key={todo.id}>
           {todo.text}
+          
           <button onClick={() => dispatch(removeToDo(todo.id))}>X</button>
         </li>
       ))}
